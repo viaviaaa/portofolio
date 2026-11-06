@@ -48,9 +48,9 @@
             const text = button.dataset.copy;
             if (!text) return;
             navigator.clipboard.writeText(text).then(() => {
-                showToast('Email berhasil disalin!');
+                showToast('Email copied successfully!');
             }).catch(() => {
-                showToast('Gagal menyalin. Coba lagi.');
+                showToast('Could not copy email. Please try again.');
             });
         });
     });
